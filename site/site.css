@@ -1,0 +1,1312 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+body,html{
+    margin:0;padding:0;
+    scroll-behavior: smooth;;
+    background:linear-gradient(45deg,lime,blue);
+}
+/*************************************************************** debut css header */
+.header-parent {
+    background:url(11.jpg);
+    height:100vh;
+    background-attachment:fixed;
+    background-size:100% 100%;
+    background-position:center;
+    animation:animate 20s infinite alternate;
+    -webkit-animation:animate 20s infinite alternate;
+}/* ***********************animation de header */
+@keyframes animate {
+    from{
+        background-size:100% 100%;
+    }
+    to{
+        background-size:150% 150%;
+    }
+}
+.header-nav-parent {
+    background:rgba(0,0,0,.4);
+}
+.logo-left {
+    color:white;
+    padding:50px;
+    border-radius:100px 0 0 100px;
+    background:linear-gradient(45deg,lightblue 50%,transparent 50%);
+    display:block;
+    margin:auto;
+    width:39%;
+    font-size:3em;
+    transition:.5s all;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    -ms-transition:.5s all;
+    -o-transition:.5s all;
+}
+.span-abdelmalek{
+    display:block;
+    text-align:center;
+    padding:5px;
+    background:url(11.jpg);
+    background:linear-gradient(45deg,lime,blue);
+}
+.span-abdelmalek:read-only{
+    user-select: none;
+}
+.les-a-center {
+}
+     /*************debut la navbar grands screen*********  */
+.a-accueil {
+    background:linear-gradient(45deg,lime, blue);
+}
+/* **** le button scroll vers le haut de la page  */
+    .button-top span{
+        position:fixed;
+        bottom:10px;
+        right:10px;
+        z-index:1;
+        padding:13px;
+        text-transform:capitalize;
+        color:white;
+        background:linear-gradient(45deg,blueviolet,blue);
+        border-radius:50%;
+        -webkit-border-radius:50%    ;
+        -moz-border-radius:50%    ;
+        -ms-border-radius:50%    ;
+        -o-border-radius:50%    ;
+        cursor:pointer;
+        transition:.5s all;
+        -webkit-transition:.5s all;
+        -moz-transition:.5s all;
+        -ms-transition:.5s all;
+        -o-transition:.5s all;
+}
+.button-top:hover span{
+    
+    transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+}
+.button-top{
+    position:relative;
+}
+/* fin scroll vers le haut de la page */
+a{
+        text-decoration:none;
+        text-transform:uppercase;
+        font-weight:bold;
+        color:lightskyblue;
+        display:block;
+        padding:10px;
+        transition:.5s all;
+        /*border-bottom:1px solid ;
+        */
+        -webkit-transition:.5s all;
+        -moz-transition:.5s all;
+        -ms-transition:.5s all;
+        -o-transition:.5s all;
+}
+    a:hover,a:active{
+        /* color:black; */
+        background:linear-gradient(45deg,lime,blue);
+        letter-spacing:4px;
+    }
+    ul{
+        background:black;
+        margin:0;display:flex;
+        justify-content:space-evenly;;
+        padding:0;
+    }
+    ul ul{
+        margin:0;padding:0;display:none;
+        position:absolute;
+    }
+    ul ul li a {
+        background:url(11.jpg);;
+    }
+    ul li:hover > ul {
+        display:block;
+    }
+    .les-a-center{
+        /*display:flex;
+        *//*flex-direction:row;
+        *//*justify-content:center;
+        */text-align:center;
+        transition:    .5s all;
+        -webkit-transition:    .5s all;
+        -moz-transition:    .5s all;
+        -ms-transition:    .5s all;
+        -o-transition:    .5s all;
+}
+    li{
+        list-style-type:none;
+        display:block;
+    }
+.logo-humberger-right {
+    display:none;
+}
+.clear{
+    content:"";
+    clear:both;
+}
+/* ***** debut copier collage  */
+.text-left-parent{
+    font-family: 'Xanh Mono', monospace;
+    text-transform:capitalize;
+    margin-left:20px;
+    padding-left:20px;
+    border-left:2px solid ;
+}
+.strong-developpeur{
+    padding:5px;
+    background:linear-gradient(45deg,lime 50% , transparent 50%);
+}
+.strong-designe{
+    /* padding:5px; */
+    background:linear-gradient(45deg,chartreuse 50% , transparent 50%);
+}
+.button-ensavoirplus,.button-nousrejoindre{
+    padding:10px 30px ;
+    border-radius:20px;;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    margin:10px;
+    background:linear-gradient(45deg,lime 70% , rgba(0,0 ,0,.5) 50% );
+    border:2px solid lime;
+    color:white;
+    text-transform:capitalize;
+    font-weight:bold;
+}
+.text-right-parent{
+
+}
+.text-right-child-image{
+    /* border:2px solid lime ; */
+    /* box-shadow:10px 10px 50px 10px lime ; */
+}
+.text-right-child-image-abdel{
+    width:100%;
+    /*position:relative;
+    */min-height:300px;
+    background:url(11.jpg);
+    background-image:none;
+    background:linear-gradient(45deg,lime,blue);
+    background-size:100% 100%;
+    border-radius:0% 50% 0 0 ;
+}
+/*  h1 header pour l'animation des titre */
+    .h1-developer-animation{
+        border-right:2px solid black;
+        white-space:nowrap;
+        overflow:hidden;
+        animation:developer 10s infinite steps(30)  ;
+        -webkit-animation:developer 10s infinite steps(30)  ;
+}
+@keyframes developer{
+    from{
+        width:0ch;
+    }
+    50%{
+        width:30ch;
+    }
+    to{
+        width:0ch;
+    }
+}
+/* ////////////////////////////////// */
+.h1-date-animation{
+    /* border-right:2px solid black; */
+    animation:date 1s infinite steps(10);
+    -webkit-animation:date 1s infinite steps(10);
+}
+@keyframes date{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+}
+/* //////////////////////////////// */
+.h1-abdelmalek-animation{
+    border-right:2px solid lime;
+    animation:abdelmalek 10s infinite steps(10);
+
+    -webkit-animation:abdelmalek 10s infinite;
+}
+@keyframes abdelmalek{
+    from{
+        width:0ch;
+        
+}
+    50%{
+        width:11ch;
+    }
+    to{
+        width:0ch;
+    }
+}
+/* fin h1 header pour l'animation de web développement */
+/* ************FIN HEADER********************* */
+/* ***********************LE MAIN ****************************** */
+    .main-section-contact-parent{
+        height:100vh;
+        position:relative;
+    }
+    .main-text-image-left{
+        /*background:url(main.jpg);
+        */z-index:2;
+        background:url(10.jpg),linear-gradient(45deg,lime,blue);
+        background-blend-mode:screen;
+        background-size:100% 100%;
+        width:45%;
+        height:80vh;
+        display:block;
+        float:left;
+        margin:10px;
+        border-left:2px solid lime;
+        margin-top:4em;
+        margin-left:20px;
+        position:relative;
+        border-radius: 50% 0 50% 50%   ;
+        -webkit-border-radius: 50% 0 50% 50%   ;
+        -moz-border-radius: 50% 0 50% 50%   ;
+        -ms-border-radius: 50% 0 50% 50%   ;
+        -o-border-radius: 50% 0 50% 50%   ;
+}
+    .main-text-contact-right{
+        border:2px solid lime;
+        display:block;
+        padding:40px;
+        position:absolute;;
+        /*padding-top:10px;
+        */left:55%;
+        top:10%;
+        width:auto;
+        transform: traslate(-50%,-50%);
+        -webkit-transform: traslate(-50%,-50%);
+        -moz-transform: traslate(-50%,-50%);
+        -ms-transform: traslate(-50%,-50%);
+        -o-transform: traslate(-50%,-50%);
+        transition:.5s all    ;
+        -webkit-transition:.5s all    ;
+        -moz-transition:.5s all    ;
+        -ms-transition:.5s all    ;
+        -o-transition:.5s all    ;
+}
+
+    .main-text-contact-right:hover{
+        transition:.5s all    ;
+        -webkit-transition:.5s all    ;
+        -moz-transition:.5s all    ;
+        -ms-transition:.5s all    ;
+        -o-transition:.5s all    ;
+        background:rgba(0,0,0,.3);
+        border-radius:0 40% 30% 30%    ;
+        -webkit-border-radius:0 40% 30% 30%    ;
+        -moz-border-radius:0 40% 30% 30%    ;
+        -ms-border-radius:0 40% 30% 30%    ;
+        -o-border-radius:0 40% 30% 30%    ;
+}
+
+    label{
+        display:block;
+        /* text-align:center; */
+        font-size:1.5em;
+        color:white;
+    }
+    form{
+        padding-left:10px;
+    }
+    .fa{
+        color:white;
+        border:2px solid  lime;
+        padding:10px;
+        border-radius:  30px;
+        -webkit-border-radius:  30px;
+        -moz-border-radius:  30px;
+        -ms-border-radius:  30px;
+        -o-border-radius:  30px;
+}
+    .inputbox{
+        line-height:45px;
+        transition:.5s all    ;
+        -webkit-transition:.5s all    ;
+        -moz-transition:.5s all    ;
+        -ms-transition:.5s all    ;
+        -o-transition:.5s all    ;
+}
+
+    input:hover{
+        background:linear-gradient(45deg,lime , blue);
+        color:white;
+}
+    input{
+        padding:20px;
+        border:2px solid chartreuse;
+        width:300px;
+        border-radius:30px;
+        -webkit-border-radius:30px;
+        -moz-border-radius:30px;
+        -ms-border-radius:30px;
+        -o-border-radius:30px;
+}
+    .main-strong-nous-rejoindre{
+        font-family: 'Xanh Mono', monospace;
+        border-left:2px solid lime;
+        margin-left:20px;
+        padding:7px;
+        /*margin-bottom:10px ;
+        */text-transform:capitalize;
+        background:rgba(0, 0 ,0,.5);
+        border-radius:0 50px 50px 0;
+        color:lime;
+        -webkit-border-radius:0 50px 50px 0;
+        -moz-border-radius:0 50px 50px 0;
+        -ms-border-radius:0 50px 50px 0;
+        -o-border-radius:0 50px 50px 0;
+}
+/******************** fin premiere section contact *********************************** */
+/* ****************************** */
+/* la deuxième section a propos **************************** ***********************/
+.main-section-a-propos-parent{
+    
+}
+.main-text-les-quatres-badges-parent{
+    position:relative;
+}
+.badge{
+    height:100vh;
+    /* border:2px solid blue ; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* position:relative; */
+
+}
+/* le premier badge********* */
+        .main-text-badge-un{
+            /* border:2px solid lime ; */
+            padding:40px;
+            display:block;
+            font-size:2.4em;
+            color:white;
+            text-align:justify;;
+            font-family:sans-serif;
+        }
+        .p-de-badge-un-text{
+            text-indent:100px;
+            line-height:55px;
+            text-align-last:center;
+            /* background:url(abdel.png);; */
+        }
+        .p-de-badge-un-text:first-line{
+            color:chartreuse;
+        }
+        .p-de-badge-un-text::first-letter{
+            font-size:2em;
+            text-transform:uppercase;
+        }
+        .badge-un-h2{
+            border-left:2px solid lime ;
+            margin-left:20px;
+            padding-left:10px;
+            text-align:center;
+            background:linear-gradient(45deg,lime,blue);
+            text-transform:capitalize;
+            width:0px;
+            transition:1.5s all        ;
+            -webkit-transition:1.5s all        ;
+            -moz-transition:1.5s all        ;
+            -ms-transition:1.5s all        ;
+            -o-transition:1.5s all        ;
+}
+        .main-text-badge-un:hover > .badge-un-h2{
+            background:linear-gradient(45deg,lime,blue);
+            width:100%;
+            transition:1.5s all        ;
+            -webkit-transition:1.5s all        ;
+            -moz-transition:1.5s all        ;
+            -ms-transition:1.5s all        ;
+            -o-transition:1.5s all        ;
+}
+
+        /* ************le deuxieme badge******************** */
+        .main-text-badge-deux{
+            padding:50px ;
+            display:block;
+            text-align:justify;
+            font-size:1.5em;
+            color:white;
+            padding-top:200px;
+        }
+        .main-text-badge-deux-image-check-green{
+            width:80px ;height:80px;margin:0;padding:0;
+            
+        }
+        .main-text-badge-deux-paragraphe{
+            font-family:sans-serif;
+            line-height:35px;
+        }
+        .main-text-badge-deux-paragraphe:first-line{
+            color:chartreuse;
+        }
+        .main-text-badge-deux-paragraphe:first-letter{
+            font-size:2em;text-transform:uppercase;
+        }
+        /* ***********le troisième badge**************** */
+        .main-text-badge-trois{
+            padding-left:40px;
+            padding:40px;
+            position:relative;
+            color:white;
+            font-size:2em;
+            text-align:justify;
+            z-index:2;
+            font-family:sans-serif;
+        }
+        .main-text-badge-trois-image-check-green{
+            width:80px;height:80px;
+            
+
+        }
+        .main-text-badge-trois-paragraphe{
+            line-height:35px;
+            font-family:sans-serif;
+        }
+        .main-text-badge-trois-paragraphe:first-line{
+            color:chartreuse;
+        }
+        .main-text-badge-trois-paragraphe::first-letter{
+            font-size:2em;
+        }
+        .div-image-absolute{
+            position:absolute;
+            mix-blend-mode:screen;
+            transform:  translatey(-80%)      ;
+            
+}
+        .img-absolute{
+            width:100%;
+        }
+        /* ****************le quatrième badge************** */
+        .main-text-badge-quatre{
+            padding:10px;
+            font-family:sans-serif;
+            text-align:justify;
+            border-bottom:2px solid lime;
+            /* after */
+            display:block;
+            padding:50px;
+            font-size:2em;
+            color:white;
+        }
+        .main-text-badge-quatre-image-check-green{
+            width:80px;height:80px;;
+        }
+        .main-text-badge-quatre-paragraphe{
+            line-height:35px;
+        }
+        .main-text-badge-quatre-paragraphe:first-line{
+            color:chartreuse;
+        }
+        .main-text-badge-quatre-paragraphe:first-letter{
+            font-size:2em;
+            text-transform:uppercase;
+        }
+             /* **************la troisième section gallerie***********************  */
+            .main-section-gallerie-tous-les-images{
+                margin-top:10px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-wrap:wrap;
+                /* border:2px solid black; */
+            }
+            .ii{
+                /* border:2px solid; */
+                padding:10px;margin:10px;
+            }
+            .i{
+                width:150px;
+                box-shadow:5px 5px 40px 0px blue ;
+            }
+            .main-section-gallerie-parent{
+                position:relative;
+                min-height:100vh;
+            }
+            .abdel-apres-gallerie{
+                position:absolute;
+                width:100%;
+                bottom:-40%;
+                z-index:1;
+                right:0;
+                mix-blend-mode:screen;
+            }
+             /******************************** fin des section ************************* */
+                .article-avant-footer-parent{
+                    padding:30px;
+                    font-weight:bolder;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .article-avant-footer-paragraphe{
+                    line-height:25px;
+                    text-align:justify;
+                    text-align-last:center;
+                    color:#000;
+                }
+                .article-avant-footer-paragraphe:first-line{
+                    color:blue;
+                }
+                .article-avant-footer-border{
+                    border:2px solid blue;
+                    padding:10px;
+                }
+                .article-avant-footer-h3-web-developpeur{
+                    text-transform:uppercase;
+                    color:#000;
+                }
+                .article-avant-footer-img{
+                    height:100px;
+                    border-radius:50%;
+                    -webkit-border-radius:50%;
+                    -moz-border-radius:50%;
+                    -ms-border-radius:50%;
+                    -o-border-radius:50%;
+                }
+                    /****************** maintenant le footer*I***** */
+                    .footer{}
+                    .footer-premier-section-les-trois-badges{
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        background:rgba(0,0,0,.5);
+                    }
+                    .footer-premier-section-badge1{
+                        text-align:justify;padding:0 10px;
+                        width:50%;
+                        
+                    }
+                    .footer-premier-section-badge2{
+                        border-left:2px solid lime;
+                        border-right:2px solid lime;
+                        padding:0 20px;
+                        text-align:center;
+                        color:lime;
+                    }
+                    .footer-premier-section-badge3{
+                        /* border:2px solid lime; */
+                        padding:0 10px;
+                    }
+                    .footer-deuxieme-section-h4{
+                        text-align:center;
+                    }
+
+
+/* fin copier collage */
+.header-middle-parent {
+}
+.text-left-parent {
+}
+.text-left-child-les-h1 {
+}
+.text-left-child-les-button {
+}
+.button-ensavoirplus {
+}
+.button-nousrejoindre {
+}
+.text-right-parent {
+}
+.text-right-child-image {
+}
+.main {
+}
+.main-section-contact-parent {
+}
+.main-text-contact-image-parent {
+}
+.main-text-image-left {
+}
+.main-text-contact-right {
+}
+.main-text-form {
+}
+.main-titre-du-form {
+}
+.main-strong-nous-rejoindre {
+}
+.inputbox {
+}
+.box-nom {
+}
+.fa {
+}
+.fa-user-circle {
+}
+.box-prenom {
+}
+.fa-user-circle-o {
+}
+.box-email {
+}
+.fa-envelope {
+}
+.box-passwords {
+}
+.fa-unlock-alt {
+}
+.main-section-a-propos-parent {
+}
+.main-text-les-quatres-badges-parent {
+}
+.main-text-badge-un {
+}
+.badge-un-h2 {
+}
+.badge-un-image {
+}
+.badge-un-text {
+}
+.p-de-badge-un-text {
+}
+.u-abdelmalek {
+}
+.big-abdelmalek {
+}
+.big-formee {
+}
+.u-cesasup {
+}
+.main-text-badge-deux {
+}
+.main-text-badge-deux-image-check-green {
+}
+.main-text-badge-deux-paragraphe {
+}
+.main-text-badge-trois {
+}
+.main-text-badge-trois-image-check-green {
+}
+.main-text-badge-trois-paragraphe {
+}
+.main-text-badge-quatre {
+}
+.main-text-badge-quatre-image-check-green {
+}
+.main-text-badge-quatre-paragraphe {
+}
+.main-section-gallerie-parent {
+}
+.main-section-gallerie-tous-les-images {
+}
+.main-section-gallerie-div-img1 {
+}
+.img1 {
+}
+.main-section-gallerie-div-img2 {
+}
+.img2 {
+}
+.main-section-gallerie-div-img3 {
+}
+.img3 {
+}
+.main-section-gallerie-div-img4 {
+}
+.img4 {
+}
+.main-section-gallerie-div-img5 {
+}
+.img5 {
+}
+.main-section-gallerie-div-img6 {
+}
+.img6 {
+}
+.main-section-gallerie-div-img7 {
+}
+.img7 {
+}
+.main-section-gallerie-div-img8 {
+}
+.img8 {
+}
+.main-section-gallerie-div-img9 {
+}
+.img9 {
+}
+.main-section-gallerie-div-img10 {
+}
+.img10 {
+}
+.main-section-gallerie-div-img11 {
+}
+.img11 {
+}
+.main-section-gallerie-div-img12 {
+}
+.img12 {
+}
+.main-section-gallerie-div-img13 {
+}
+.img13 {
+}
+.main-section-gallerie-div-img14 {
+}
+.img14 {
+}
+.main-section-gallerie-div-img15 {
+}
+.img15 {
+}
+.article-avant-footer-parent {
+}
+.article-avant-footer-border {
+}
+.article-avant-footer-h3-web-developpeur {
+}
+.article-avant-footer-img {
+}
+.article-avant-footer-paragraphe {
+}
+.footer {
+}
+.footer-premier-section {
+}
+.footer-premier-section-les-trois-badges {
+}
+.footer-premier-section-badge1 {
+}
+.footer-premier-section-badge1-h5 {
+}
+.footer-premier-section-badge1-paragraphe {
+}
+.footer-premier-section-badge2 {
+}
+.footer-premier-section-badge2-h5 {
+}
+.footer-premier-section-badge2-paragraphe {
+}
+.footer-premier-section-badge3 {
+}
+.footer-premier-section-badge3-h5 {
+}
+.footer-les-images-des-partenaires {
+}
+.footer-img-logo {
+}
+.teams {
+}
+.google {
+}
+.zoom {
+}
+.webinarjam {
+}
+.footer-deuxieme-section {
+}
+.footer-deuxieme-section-h4 {
+}
+img{
+    width:100px;
+}
+/* *********************le media query pour 600px ************************* */
+@media screen and (max-width:600px){
+    body,html{
+        background:rgb(16, 16, 201);
+        background:linear-gradient(45deg, lime ,blue);
+        font-family:serif;margin:0;padding:0;
+        color:white;
+
+        
+    }
+    .header-parent{
+        background:url(11.jpg);
+        background-size:cover;
+        height:100vh;
+        animation:none    ;
+        -webkit-animation:none    ;
+}
+.header-nav-parent{
+    background:transparent;
+}
+    .logo-humberger-right > .humberger-img{
+        width:30px;
+    }
+    a{
+        text-decoration:none;
+        text-transform:uppercase;
+        font-weight:bold;
+        color:lightskyblue;;
+        display:block;
+        padding:5px;
+        border-bottom:1px solid ;
+    }
+    a:hover{
+        color:black;
+        background:lightblue
+    }
+    ul{
+        background:black;
+        margin:0;display:none;
+        padding:0;
+    }
+    ul ul{
+        margin:0;padding:0;display:none;
+    }
+    ul ul li a {
+        background:url(11.jpg);;
+    }
+    ul li:hover > ul {
+        display:block;
+    }
+    .les-a-center{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+    }
+    li{
+        list-style-type:none;
+        display:block;
+    }
+    .logo-left{
+        background:linear-gradient(45deg,lightblue 50%, transparent 50%);
+        padding:10px;
+        display:block;
+        margin-left:5px;
+        float:left;
+        font-size:16px;
+        width:80px;
+        border-radius:20px;    ;
+        -webkit-border-radius:20px    ;
+        -moz-border-radius:20px    ;
+        -ms-border-radius:20px    ;
+        -o-border-radius:20px    ;
+}
+.clear{
+    content:"";
+    clear:both;
+}
+.logo-left > span{
+    background:url(11.jpg);
+    display:block;
+    color:white;
+    padding:3px;
+}
+.logo-humberger-right{
+    /* display:flex;; */
+    /* justify-content:center; */
+    display:block;
+    float:right;
+    padding-right:10px;
+    padding-top:5px;
+}
+.button-top{
+    display:none;
+}
+/***************************************** maintenant le middle de header */
+.text-left-parent{
+    font-family: 'Xanh Mono', monospace;
+    text-transform:capitalize;
+    margin-left:20px;
+    padding-left:20px;
+    border-left:2px solid ;
+}
+.strong-developpeur{
+    padding:5px;
+    background:linear-gradient(45deg,lime 50% , transparent 50%);
+}
+.strong-designe{
+    /* padding:5px; */
+    background:linear-gradient(45deg,chartreuse 50% , transparent 50%);
+}
+.button-ensavoirplus,.button-nousrejoindre{
+    padding:10px 30px ;
+    border-radius:20px;;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    margin:10px;
+    background:linear-gradient(45deg,lime 70% , rgba(0,0 ,0,.5) 50% );
+    border:2px solid lime;
+    color:white;
+    text-transform:capitalize;
+    font-weight:bold;
+}
+.text-right-parent{
+
+}
+.text-right-child-image{
+    /* border:2px solid lime ; */
+    /* box-shadow:10px 10px 50px 10px lime ; */
+}
+.text-right-child-image-abdel{
+    width:100%;
+    /*position:relative;
+    */min-height:300px;
+    /* background:url(11.jpg); */
+    background:linear-gradient(45deg,lime,blue);
+    /* background-size:100% 100%; */
+    border-radius:0% 50% 0 0 ;
+}
+/*  h1 header pour l'animation des titre */
+    .h1-developer-animation{
+        border-right:none;
+        white-space:normal;
+        overflow:initial;;
+        animation:none  ;
+        -webkit-animation:none  ;
+}
+/* ////////////////////////////////// */
+.h1-date-animation{
+    /*border-right:2px solid black;
+    */animation:none;
+    -webkit-animation:none;
+}
+/* //////////////////////////////// */
+.h1-abdelmalek-animation{
+    border-right:none;
+    animation:none;
+    -webkit-animation:none;
+}
+/* fin h1 header pour l'animation de web développement
+/* ************FIN HEADER********************* */
+/* ***********************LE MAIN ****************************** */
+    .main-section-contact-parent{
+        height:40vh;
+        position: static;;
+        border:none;
+    }
+.main-text-image-left{
+    background:none;
+        width:0;height:0;;
+        display:contents;
+        float:none;
+        margin:0;
+        position:static;
+}
+.main-text-contact-right{
+    position:static;
+    padding:0;
+    border:none;
+    padding-bottom:5px;
+}
+.main-text-contact-right:hover{
+    background:none;
+}
+    label{
+        display:block;
+        font-size:initial;
+        text-align:initial;
+    }
+    form{
+        padding-left:10px;
+    }
+    .fa{
+        color:white;
+        border:1px solid lime;
+        padding:10px;
+        border-radius:  20px;  ;
+        -webkit-border-radius:  20p  ;
+        -moz-border-radius:  20p  ;
+        -ms-border-radius:  20p  ;
+        -o-border-radius:  20p  ;
+}
+    .inputbox{
+        line-height:25px;
+    }
+
+    input:hover{
+        background:linear-gradient(45deg,lime , blue);
+        color:white;
+    }
+    input{
+        width:initial;
+        padding:10px;
+        border:2px solid chartreuse;
+        border-radius:20px;;
+        -webkit-border-radius:20px;
+        -moz-border-radius:20px;
+        -ms-border-radius:20px;
+        -o-border-radius:20px;
+}
+    .main-strong-nous-rejoindre{
+        font-family: 'Xanh Mono', monospace;
+        border-left:2px solid lime;
+        margin-left:20px;
+        padding:7px;
+        /* margin-bottom:10px ; */
+        text-transform:capitalize;
+        background:rgba(0, 0 ,0,.5)
+        /* filter:drop-shadow(10px 10px 10px lime)    ; */
+        /* -webkit-filter:drop-shadow(10px 10px 10px lime)    ; */
+}
+/******************** fin premiere section contact *********************************** */
+/* ****************************** */
+/* la deuxième section a propos **************************** ***********************/
+.main-section-a-propos-parent{
+    border:none;
+    height:initial;
+    padding:10px;;
+    margin:initial;
+    width:initial;
+}
+.badge{
+    height:initial;
+    border:none;
+    padding:initial;
+    margin:initial;
+    display:initial;
+}
+/* le premier badge********* */
+        .main-text-badge-un{
+            /* border:2px solid lime ; */
+            padding:10px;
+            font-size:initial;
+            text-align:justify;;
+            font-family:sans-serif;
+        }
+        .p-de-badge-un-text{
+            text-indent:initial;
+            line-height:25px;
+            text-align-last:initial;
+            /* background:url(abdel.png);; */
+        }
+        .p-de-badge-un-text:first-line{
+            color:chartreuse;
+        }
+        .p-de-badge-un-text::first-letter{
+            font-size:2em;
+            text-transform:uppercase;
+        }
+        .badge-un-h2{
+            border-left:2px solid lime ;
+            margin-left:20px;
+            padding-left:10px;
+            background:rgba(0,0,0,.5);
+            text-transform:capitalize;
+        }
+        .main-text-badge-un:hover > .badge-un-h2{
+            background:none;
+            width:initial;
+            text-align:left;
+            transition:1.5s all        ;
+            -webkit-transition:1.5s all        ;
+            -moz-transition:1.5s all        ;
+            -ms-transition:1.5s all        ;
+            -o-transition:1.5s all        ;
+}
+
+        /* ************le deuxieme badge******************** */
+        .main-text-badge-deux{
+            padding:0 10px ;
+            text-align:justify;
+        }
+        .main-text-badge-deux{
+            padding:0 10px;
+            display:initial;
+            text-align:justify;
+            font-size:initial;
+            color:white;
+            padding-top:initial;
+        }
+        .main-text-badge-deux-image-check-green{
+            width:80px ;height:80px;margin:0;padding:0;
+        }
+        .main-text-badge-deux-paragraphe{
+            font-family:sans-serif;
+            line-height:25px;
+        }
+        .main-text-badge-deux-paragraphe:first-line{
+            color:chartreuse;
+        }
+        .main-text-badge-deux-paragraphe:first-letter{
+            font-size:2em;text-transform:uppercase;
+        }
+        /* ***********le troisième badge**************** */
+        .main-text-badge-trois{
+            padding:10px;
+            position:relative;
+            color:white;
+            font-size:initial;
+            text-align:justify;
+            z-index:initial;
+            font-family:sans-serif;
+        }
+        .main-text-badge-trois-image-check-green{
+            width:80px;height:80px;
+        }
+        .main-text-badge-trois-paragraphe{
+            line-height:25px;
+            font-family:sans-serif;
+        }
+        .main-text-badge-trois-paragraphe:first-line{
+            color:chartreuse;
+        }
+        .main-text-badge-trois-paragraphe::first-letter{
+            font-size:2em;
+        }
+        .div-image-absolute{
+            position:absolute;
+            height:300px;width:300px;
+            mix-blend-mode:screen;
+            transform:translate(0);        ;
+            -webkit-transform:translate(0)        ;
+            -moz-transform:translate(0)        ;
+            -ms-transform:translate(0)        ;
+            -o-transform:translate(0)        ;
+}
+        .img-absolute{
+            width:100%;
+        }
+        /* ****************le quatrième badge************** */
+        .main-text-badge-quatre{
+            padding:10px;
+            font-family:sans-serif;
+            text-align:justify;
+            border-bottom:2px solid lime;
+            /* after */
+            display:initial;
+            font-size:initial;
+            color:white;
+        }
+        .main-text-badge-quatre-image-check-green{
+            width:80px;height:80px;;
+        }
+        .main-text-badge-quatre-paragraphe{
+            line-height:25px;
+        }
+        .main-text-badge-quatre-paragraphe:first-line{
+            color:chartreuse;
+        }
+        .main-text-badge-quatre-paragraphe:first-letter{
+            font-size:2em;
+            text-transform:uppercase;
+        }
+             /* **************la troisième section gallerie***********************  */
+            .main-section-gallerie-tous-les-images{
+                margin-top:10px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-wrap:wrap;
+                /* border:2px solid black; */
+            }
+            .ii{
+                /* border:2px solid; */
+                padding:10px;margin:10px;
+            }
+            .i{
+                width:150px;
+                box-shadow:5px 5px 40px 0px blue ;
+            }
+            .main-section-gallerie-parent{
+                position:relative;
+            }
+            .abdel-apres-gallerie{
+                position:absolute;
+                width:100%;
+                bottom:-40%;
+                z-index:1;
+                right:0;
+                mix-blend-mode:screen;
+            }
+             /******************************** fin des section ************************* */
+                .article-avant-footer-parent{
+                    padding:30px;
+                    font-weight:bolder;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .article-avant-footer-paragraphe{
+                    line-height:25px;
+                    text-align:justify;
+                    text-align-last:center;
+                    color:#000;
+                }
+                .article-avant-footer-paragraphe:first-line{
+                    color:blue;
+                }
+                .article-avant-footer-border{
+                    border:2px solid blue;
+                    padding:10px;
+                }
+                .article-avant-footer-h3-web-developpeur{
+                    text-transform:uppercase;
+                    color:#000;
+                }
+                .article-avant-footer-img{
+                    height:100px;
+                    border-radius:50%;
+                    -webkit-border-radius:50%;
+                    -moz-border-radius:50%;
+                    -ms-border-radius:50%;
+                    -o-border-radius:50%;
+                }
+                    /****************** maintenant le footer*I***** */
+                    .footer{}
+                    .footer-premier-section-les-trois-badges{
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        background:rgba(0,0,0,.5);
+                    }
+                    .footer-premier-section-badge1{
+                        text-align:justify;padding:0 10px;
+                        width:50%;
+                        
+                    }
+                    .footer-premier-section-badge2{
+                        border-left:2px solid lime;
+                        border-right:2px solid lime;
+                        padding:0 20px;
+                        text-align:center;
+                        color:lime;
+                    }
+                    .footer-premier-section-badge3{
+                        /* border:2px solid lime; */
+                        padding:0 10px;
+                    }
+                    .footer-deuxieme-section-h4{
+                        text-align:center;
+                    }
+
+
+}
+/* *********************le deuxieme media query pour 470px *********** */
+@media (max-width:470px){
+    
+                    .footer-premier-section-les-trois-badges{
+                        display:flex;
+                        flex-direction:column;
+                    }
+                    body{
+                        color:white;
+                    }
+                    .footer-premier-section-badge2{
+                        border-bottom:2px solid lime;
+                        border-top:2px solid lime ;
+                    }
+}
+/*********** media pour répare le contact de right */
+@media (max-width:1058px)
+{
+    
+        input{
+            width:100px;
+            transition:.5s all        ;
+            -webkit-transition:.5s all        ;
+            -moz-transition:.5s all        ;
+            -ms-transition:.5s all        ;
+            -o-transition:.5s all        ;
+}
+        .main-text-contact-right{
+            paddign:0;
+}
+
+    
+}

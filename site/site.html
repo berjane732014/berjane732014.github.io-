@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- le titre  -->
+    <title>hover-zoom</title>
+    <!-- le cdn jquery -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- fin cdn jquery -->
+    <!-- le link du css -->
+    <link rel="stylesheet" href="site.css">
+    <!-- fin link css -->
+    <!-- link pour les icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fin link pour les icons -->
+    <!-- faire le link du favicon -->
+    <link rel="shortcut icon" href="check-green.png" type="image/x-icon">
+    <!-- fin link de favicon -->
+    <!-- pour modifier le design du scrollbar  -->
+    <style>
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: royalblue;
+            border-radius: 20px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: dodgerblue
+        }
+
+        ::-webkit-scrollbar-track {
+            background: lightskyblue
+        }
+
+        ;
+    </style>
+    <!-- fin scrollbar  -->
+    <!-- code jquery -->
+    <script type="text/javascript">
+        var jq = jQuery.noConflict();
+        jq(document).ready(function () {
+            jq(".logo-humberger-right").click(function () {
+                jq("ul").slideToggle("slow"),
+                    jq("ul ul").css("display", "none");
+            });
+
+        });
+    </script>
+    <!-- fin code jquery -->
+</head>
+
+<body>
+
+    <!-- --------------------------------------------------------le header -->
+    <header class="header-parent">
+        <!-- la navbar -->
+        <nav class="header-nav-parent">
+            <div class="logo-left"><span class="span-abdelmalek">Abdelmalek.io</span></div>
+            <div class="logo-humberger-right">
+                <img class="humberger-img" src="humberger.png" alt="">
+            </div>
+            <div class="clear"></div>
+            <div class="les-a-center">
+                <ul>
+                    <li><a id="accueil" class="a-accueil" href="#">accueil</a>
+                        <ul id="first-ul">
+                            <li><a href="#">cv</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">carrière</a></li>
+                            <li><a href="#">histoire</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#apropos">a propos</a></li>
+                    <li><a href="#gallerie">gallérie</a>
+                        <ul id="seconde-ul">
+                            <li><a href="#">mes site</a></li>
+                            <li><a href="#">mes hobbies</a></li>
+                            <li><a href="#">mon futur</a></li>
+                            <li><a href="#">mes qualité</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <!-- <div class="logo-humberger-right">
+                <img class="humberger-img" src="humberger.png" alt="">
+            </div> -->
+        </nav>
+        <!-- le milieux de la navbar  -->
+        <div class="header-middle-parent">
+            <div class="text-left-parent">
+                <div class="text-left-child-les-h1" style="color:white;">
+                    <h1 class="h1-abdelmalek-animation">abdelmalek</h1>
+                    <h1>berjane</h1>
+                    <h1 class="h1-developer-animation">web <strong class="strong-developpeur">développeur</strong> &
+                        <strong class="strong-designe">désigne</strong>
+                    </h1>
+                    <h1 class="h1-date-animation">2020/2021</h1>
+                </div>
+                <div class="text-left-child-les-button">
+                    <button class="button-ensavoirplus">en savoir plus</button><button class="button-nousrejoindre">nous
+                        rejoindre !!</button>
+                </div>
+            </div>
+            <div class="text-right-parent">
+                <div class="text-right-child-image">
+                    <img class="text-right-child-image-abdel" src="abdel.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div onclick="haut()" id="button-top" class="button-top"><span>top</span></div>
+    </header>
+    <!-- le main main main main main main ------------------------le main  -->
+    <main class="main">
+        <!-- la premiere section contact -->
+        <div id="contact" class="main-section-contact-parent">
+            <div class="main-text-contact-image-parent">
+                <div class="main-text-image-left">
+
+                </div>
+                <div class="main-text-contact-right">
+                    <form action="site.php" class="main-text-form">
+                        <div class="main-titre-du-form">
+                            <strong class="main-strong-nous-rejoindre">nous rejoindre !!</strong>
+                        </div>
+                        <div class="inputbox box-nom">
+                            <label for="nom">Nom </label>
+                            <input placeholder="Nom..." type="text" name="nom" id="input-nom"><i
+                                class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="inputbox box-prenom">
+                            <label for="prenom">Prénom </label>
+                            <input placeholder="Prénom..." type="text" name="prenom" id="input-prenom"><i
+                                class="fa fa-user-circle-o"></i>
+                        </div>
+                        <div class="inputbox box-email">
+                            <label for="email">Email </label>
+                            <input placeholder="Email..." type="email" name="email" id="input-email"><i
+                                class="fa fa-envelope"></i>
+                        </div>
+                        <div class="inputbox box-passwords">
+                            <label for="password">Mot de pass </label>
+                            <input placeholder="Password..." type="password" name="password" id="input-password"><i
+                                class="fa fa-unlock-alt"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- la deuxième section a propos -->
+        <div class="main-section-a-propos-parent" id="a-propos">
+            <div class="main-text-les-quatres-badges-parent">
+                <div id="apropos" class="main-text-badge-un badge">
+                    <div class="badge-un-h2">
+                        <h2>abdelmalek</h2>
+                    </div>
+                    <!-- <div class="badge-un-image">
+                        <img src="abdel.png" alt="">
+                    </div> -->
+                    <div class="badge-un-text">
+                        <p class="p-de-badge-un-text">
+                            jeune web développeur , étudiant en deuxième années filière
+                            développement informatique
+                            .<br> son rêve c'est devenir le "zakir naik" du domaine front-end (cote visuel
+                            des site web aux chers internautes... )
+                            . <br> <big class="big-formee">formée par <u class="u-cesasup">"CESA-SUP"</u> </big>!!
+                        </p>
+                    </div>
+                </div>
+                <!-- deuxième badge -->
+                <div class="main-text-badge-deux badge">
+                    <img class="main-text-badge-deux-image-check-green" src="check-green.png" alt="image-check">
+                    <p class="main-text-badge-deux-paragraphe">
+                        je conçois des sites web codés à la main depuis plus de dix ans, quelque soit le langage que
+                        j'utilise. J'accorde une
+                        importance particulière à respecter les normes et à proposer des prestations soignées. Vous êtes
+                        un particulier, une
+                        petite ou moyenne entreprise ? Vous souhaitez une visibilité sur internet afin de montrer votre
+                        savoir-faire ou de
+                        proposer vos services ? Du simple site vitrine à la boutique en ligne, je vous garantis un
+                        produit :Moderne, léger et dynamique,
+                        Compatible tous navigateurs,
+                        Conforme aux standards,
+                        Excellent rapport qualité/prix,
+                        Suivi et conseils (sur demande),
+                        PWA (sur demande)
+                    </p>
+                </div>
+                <!-- troisième. badge -->
+                <div class="main-text-badge-trois badge">
+                    <img class="main-text-badge-trois-image-check-green" src="check-green.png" alt="">
+                    <div class="div-image-absolute"><img class="img-absolute" src="abdel.png" alt=""></div>
+                    <p class="main-text-badge-trois-paragraphe">
+                        si vous le souhaitez, vous pourrez suivre l'évolution de votre site en temps réel en vous
+                        rendant
+                        à une adresse internet
+                        que je vous fournirai au début du projet (une fois le devis signé). Ainsi, vous serez en mesure
+                        de me livrer vos
+                        impressions, de me soumettre les corrections à appliquer et surtout de garder un contrôle total
+                        sur votre projet. Pas de
+                        mauvaises surprises, pas de frais cachés, le projet se déroule en toute transparence.
+                    </p>
+                </div>
+                <!-- quatrième badge -->
+                <div class="main-text-badge-quatre badge">
+                    <img class="main-text-badge-quatre-image-check-green" src="check-green.png" alt="">
+                    <p class="main-text-badge-quatre-paragraphe">
+                        objectif de ce blog est de vous faire partager créations et découvertes en matière de graphisme
+                        et de développement.
+
+                        Vous trouverez des cours sur différents langages, des astuces, des tutoriels, des ressources à
+                        télécharger et bien
+                        plus...
+
+                        En espérant que cette visite vous soit la plus agréable possible.
+                        Qu'attendez vous pour intégrer le monde de <u><big>"cesa-sup"</big></u> . Si
+                        vous avez des difficultés à nous trouver, contactez-moi "berjane732014@outlook.com" et je verrai
+                        si je peux vous aider.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- la troisième section gallérie  -->
+        <div id="gallerie" class="main-section-gallerie-parent">
+            <div class="main-section-gallerie-tous-les-images">
+                <div class="main-section-gallerie-div-img1 ii"><img src="1.jpg" alt="" class="img1 i"></div>
+                <div class="main-section-gallerie-div-img2 ii"><img src="2.jpg" alt="" class="img2 i"></div>
+                <div class="main-section-gallerie-div-img3 ii"><img src="3.jpg" alt="" class="img3 i"></div>
+                <div class="main-section-gallerie-div-img4 ii"><img src="4.jpg" alt="" class="img4 i"></div>
+                <div class="main-section-gallerie-div-img5 ii"><img src="5.jpg" alt="" class="img5 i"></div>
+                <div class="main-section-gallerie-div-img6 ii"><img src="6.jpg" alt="" class="img6 i"></div>
+                <div class="main-section-gallerie-div-img7 ii"><img src="7.jpg" alt="" class="img7 i"></div>
+                <div class="main-section-gallerie-div-img8 ii"><img src="8.jpg" alt="" class="img8 i"></div>
+                <div class="main-section-gallerie-div-img9 ii"><img src="9.jpg" alt="" class="img9 i"></div>
+                <div class="main-section-gallerie-div-img10 ii"><img src="10.jpg" alt="" class="img10 i"></div>
+                <div class="main-section-gallerie-div-img11 ii"><img src="11.jpg" alt="" class="img11 i"></div>
+                <div class="main-section-gallerie-div-img12 ii"><img src="12.jpg" alt="" class="img12 i"></div>
+                <div class="main-section-gallerie-div-img13 ii"><img src="13.jpg" alt="" class="img13 i"></div>
+                <div class="main-section-gallerie-div-img14 ii"><img src="14.jpg" alt="" class="img14 i"></div>
+                <div class="main-section-gallerie-div-img15 ii"><img src="15.jpg" alt="" class="img15 i"></div>
+            </div>
+            <div class="abdel-apres-gallerie"><img src="abdel.png" class="abdel-apres-gallerie" alt=""></div>
+        </div>
+        <hr width="80%">
+        <!-- article avant footer -->
+        <div class="article-avant-footer-parent">
+            <article class="article-avant-footer-border">
+                <h3 class="article-avant-footer-h3-web-developpeur">web développer</h3>
+                <img class="article-avant-footer-img" src="main.jpg" alt="">
+                <p class="article-avant-footer-paragraphe">
+                    2020, je décide de devenir développeur informatique en integrant l'ecole <u><big>CESA-SUP</big></u>
+                    tout en continuant mon activité sportive.
+                    <br> Depuis lors, j'ai pu
+                    réaliser de quelques sites web, des logos, des affiches, des flyers et autres brochures... Vous
+                    pouvez voir mon
+                    actualité en me suivant sur mon compte ou en visitant mon blog qui est en cours de traitement sur
+                    lequel j'écris des articles, mets
+                    à disposition des
+                    ressources, des astuces, des tutoriels... sur des sujets concernant le développement et le
+                    graphisme.
+                </p>
+            </article>
+        </div>
+    </main>
+    <!-- ----------------------------------------------------------le footer -->
+    <footer class="footer">
+        <section class="footer-premier-section">
+            <div class="footer-premier-section-les-trois-badges">
+                <div class="footer-premier-section-badge1">
+                    <h5 style="text-align:center;text-transform:uppercase;" class="footer-premier-section-badge1-h5">qui
+                        sommes nous?</h5>
+                    <p class="footer-premier-section-badge1-paragraphe">
+                        ce site est fondé sur l'idée d'améliorer les compétences
+                        des autres grâce à des cours <u><big>"CESA-SUP</big></u> pratiques basées sur
+                        des idées passionnantes.
+
+                        Nous aidons ceux qui ont une passion à transformer leurs idées en
+                        quelque chose de plus. Notre vision a toujours été
+                        d'aider, d'inspirer et d'exciter par la créativité et l'expérience.
+                    </p>
+                </div>
+                <div class="footer-premier-section-badge2">
+                    <h5 style="text-transform: uppercase;" class="footer-premier-section-badge2-h5">ou sommes nous?</h5>
+                    <p class="footer-premier-section-badge2-paragraphe">
+                    <address>
+                        Morroco <br> Casablanca <br> Avenue hassan 2, <br> Rue des impasse, 20220 <br>
+                        <hr width="20%">
+                        0523654323, 0632657323 <br> berjane732014@outlook.com <br>
+                        portfolio : "abdelmalek.com"
+                    </address>
+                    </p>
+                </div>
+                <div class="footer-premier-section-badge3">
+                    <h5 style="text-transform: uppercase;text-align: center;" class="footer-premier-section-badge3-h5">
+                        Nos partenaires !</h5>
+                    <hr width="30%">
+                    <div class="footer-les-images-des-partenaires">
+                        <img class="footer-img-logo teams" src="logo microsoft teams.png" alt="">
+                        <img class="footer-img-logo google" src="logo google hangouts.png" alt="">
+                        <img class="footer-img-logo zoom" src="logo zoom.png" alt="">
+                        <img class="footer-img-logo webinarjam" src="logo webinarjam.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-deuxieme-section">
+            <h4 class="footer-deuxieme-section-h4">© copyright - tous droit reserve "2020/2021" </h4>
+        </section>
+    </footer>
+
+
+    <!-- le script pour le button de scroll top  -->
+    <script>
+        let a = document.getElementById("button-top");
+        function haut() {
+            document.body.scrollTop = '0';
+            document.documentElement.scrollTop = '0';
+        }
+    </script>
+    <!-- fin script pour le button de scroll top  -->
+</body>
+
+</html>
